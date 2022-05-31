@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="h1 text-center mb-4">Movies catalog</h1>
+    <div class="row">
+      <div class="col-4">
+        <form action="https://echo.htmlacademy.ru/" method="POST" class="mb-5 ">
+          <div class="mb-3">
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="ave">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="5">
+          </div>
+
+          <div class="mb-3">
+            <select class="form-select" aria-label="Default select example">
+              <option selected disabled>All</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Rating (high to low)">
+            <datalist id="datalistOptions">
+              <option value="San Francisco">
+              <option value="New York">
+              <option value="Seattle">
+              <option value="Los Angeles">
+              <option value="Chicago">
+            </datalist>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Search</button>
+        </form>
+
+        <div>
+          <h3 class="h1 mb-3">Bookmarked movies</h3>
+
+          <ul class="list-group">
+            <li class="list-group-item"><span class="mb-2 d-inline-block">Avengers Infinity War</span>
+              <button class="btn btn-danger d-block">Remove</button>
+            </li>
+            <li class="list-group-item">
+              <span class="mb-2 d-block">The Avengers</span>
+              <button class="btn btn-danger ">Remove</button>
+            </li>
+            <li class="list-group-item"> <span class="mb-2 d-block">12 Years Slave</span>
+              <button class="btn btn-danger ">Remove</button>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-8">
+        <h4 class="h4 mb-1">Search results: 39</h4>
+        <div class="alert alert-success mb-3" role="alert">
+          A simple success alert—check it out!
+        </div>
+        <div class="row mb-4">
+          <div class="col-6">
+            <div class="card">
+              <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Avengers Infinity War</h5>
+                <p class="card-text d-flex align-items-center">
+                  <img class="me-2" src="./images/calendar-silhouette.png" width="24" height="24" alt="calendar"> 
+                  <time datetime="2018">2018</time>
+                </p>
+                <p class="card-text d-flex align-items-center">
+                  <img class="me-2" src="./images/star.png" width="24" height="24" alt="star"> 
+                  <span >8.7</span>
+                </p>
+                <div class="d-flex justify-content-around">
+                  <a href="#" class="btn btn-outline-primary  ">Watch trailer </a>
+                <a href="#" class="btn btn-outline-info ">More info</a>
+                <a href="#" class="btn btn-outline-success ">Bookmark</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card">
+              <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The Avengers</h5>
+                <p class="card-text d-flex align-items-center">
+                  <img class="me-2" src="./images/calendar-silhouette.png" width="24" height="24" alt="calendar"> 
+                  <time datetime="2018">2012</time>
+                </p>
+                <p class="card-text d-flex align-items-center">
+                  <img class="me-2" src="./images/star.png" width="24" height="24" alt="star"> 
+                  <span >8.1</span>
+                </p>
+                <div class="d-flex justify-content-around">
+                  <a href="#" class="btn btn-outline-primary  ">Watch trailer </a>
+                <a href="#" class="btn btn-outline-info ">More info</a>
+                <a href="#" class="btn btn-outline-success ">Bookmark</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="d-flex justify-content-center" >
+          <ul class="pagination">
+            <li class="page-item active" aria-current="page">
+              <span class="page-link">1</span>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
